@@ -38,7 +38,7 @@
           >
             <div>
               <img
-                src="/images/46502c3f-11e0-418b-89f5-8ec4279a7a93.jpg"
+                src="/images/User.png"
                 width="150px"
                 class="rounded-full"
               />
@@ -109,7 +109,7 @@
               "
             >
               <span class="text-2xl text-black font-bold font-serif"
-                >Details-</span
+                >Available Bus - </span
               >
               <span class="text-4xl text-gray-700 font-bold"
                 ><%=result[0][0].counttypeid%></span
@@ -123,7 +123,7 @@
               "
             >
               <span class="text-2xl text-black font-bold font-serif"
-                >State-</span
+                >State - </span
               >
               <span class="text-4xl text-gray-700 font-bold"
                 ><%=result[1][0].countstate%></span
@@ -137,24 +137,12 @@
               "
             >
               <span class="text-2xl text-black font-bold font-serif"
-                >City-</span
+                >City - </span
               >
               <span class="text-4xl text-gray-700 font-bold"
                 ><%=result[2][0].countcity%></span
               >
             </div>
-          </div>
-          <div
-            class="w-[60%] h-96 bg-blue-200 border-2 border-white rounded-2xl flex absolute top-[38%] left-[25%] shadow-lg shadow-gray-100"
-          >
-            <iframe
-              src="http://localhost:3000/bus/display_all_data"
-              class="h-[100%] w-[100%] absolute left-0 rounded-2xl"
-              aria-disabled="true"
-              scrolling="no"
-              onload="disableContextMenu()"
-              style="background-size: cover"
-            ></iframe>
           </div>
         </div>
       </div>

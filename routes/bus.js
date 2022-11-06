@@ -126,21 +126,12 @@ router.get("/display_all_data", function (req, res) {
         } else {
           var admin = JSON.parse(localStorage.getItem("ADMIN"));
 
-          if (result === "") {
-            res.render("displayalldata", {
-              status: true,
-              data: null,
-              admin: admin,
-              message: "No Record Found",
-            });
-          } else {
-            res.render("displayalldata", {
-              status: true,
-              data: result,
-              admin: admin,
-              message: "",
-            });
-          }
+          res.render("displayalldata", {
+            status: true,
+            data: result,
+            admin: admin,
+            message: "",
+          });
         }
       }
     }
