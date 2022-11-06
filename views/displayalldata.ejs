@@ -548,7 +548,6 @@
           "/bus/deletebusdata",
           { busid: $("#busid").val() },
           function (data) {
-            alert(data.massage);
             window.location.reload("/bus/display_all_data");
           }
         );
