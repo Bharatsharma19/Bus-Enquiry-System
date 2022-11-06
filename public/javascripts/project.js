@@ -37,7 +37,7 @@ $(document).ready(function () {
       { stateid: $("#sstate").val() },
       function (data) {
         $("#scity").empty();
-        $("#scity").append($("<option>").text("choose city"));
+        $("#scity").append($("<option>").text("Choose City"));
 
         data.city.map((item) => {
           $("#scity").append(
@@ -62,7 +62,7 @@ $(document).ready(function () {
       { stateid: $("#dstate").val() },
       function (data) {
         $("#dcity").empty();
-        $("#dcity").append($("<option>").text("choose city"));
+        $("#dcity").append($("<option>").text("Choose City"));
         data.city.map((item) => {
           $("#dcity").append(
             $("<option>").text(item.cityname).val(item.cityid)
