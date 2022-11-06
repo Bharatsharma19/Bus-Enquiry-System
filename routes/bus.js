@@ -101,7 +101,6 @@ router.post("/submmited", upload.any("picture"), function (req, res) {
     ],
     function (error, result) {
       if (error) {
-        console.log(error)
         res.render("busInterface", { message: "Server Error" });
       } else {
         res.render("busInterface", { message: "Record Submitted" });
