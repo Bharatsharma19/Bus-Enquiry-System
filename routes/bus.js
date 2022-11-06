@@ -121,11 +121,11 @@ router.get("/display_all_data", function (req, res) {
           admin: null,
         });
       } else {
+        var admin = JSON.parse(localStorage.getItem("ADMIN"));
+        
         if (admin === null) {
           res.redirect("/login/admin");
         } else {
-          var admin = JSON.parse(localStorage.getItem("ADMIN"));
-
           res.render("displayalldata", {
             status: true,
             data: result,
